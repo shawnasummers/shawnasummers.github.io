@@ -9,11 +9,22 @@
   background:green"></div>
 
 <script>
-
-var velocity = 5;
+var time = 2000;
+var velocity = 100;
 var position = 0;
 var ball = document.getElementById('ball');
 
 // YOUR CODE 
-// ----------------
+function myFunction(){
+
+  while(ball.style.left == position + 'px'){
+    position += velocity;
+    ball.style.left = position + 'px';
+  }
+}
+setInterval(myFunction, time);
+
+
+
+
 </script>
