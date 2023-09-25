@@ -19,8 +19,12 @@ function moveBall(){
     position = position + velocity;
     ball.style.left = position + 'px';
 }
+
 setInterval(moveBall, time);
 
+if(position === 500){
+  position = 0;
+}
 
 
 
