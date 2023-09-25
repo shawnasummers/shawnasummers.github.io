@@ -15,14 +15,14 @@ var position = 0;
 var ball = document.getElementById('ball');
 
 // YOUR CODE 
-function myFunction(){
+function moveBall(){
 
-  while(ball.style.left == position + 'px'){
+  //while(ball.style.left == position + 'px'){
     position += velocity;
     ball.style.left = position + 'px';
-  }
+  //}
 }
-setInterval(myFunction, time);
+setInterval(moveBall, time);
 
 
 
