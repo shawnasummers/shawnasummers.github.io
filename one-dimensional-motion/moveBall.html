@@ -16,11 +16,8 @@ var ball = document.getElementById('ball');
 
 // YOUR CODE 
 function moveBall(){
-
-  //while(ball.style.left == position + 'px'){
-    position += velocity;
+    position = position + velocity;
     ball.style.left = position + 'px';
-  //}
 }
 setInterval(moveBall, time);
 
