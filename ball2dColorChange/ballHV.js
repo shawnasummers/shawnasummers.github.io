@@ -51,7 +51,7 @@ function moveBall() {
 }
 
 function changeColor(){
-  if(positionX === Xmin+1)  ball.style.background = 'lightteal';
+  if(positionX === Xmin+1)  ball.style.background = 'teal';
   if(positionY === Ymin+1)  ball.style.background = 'pink';
   if(positionX === Xmax-1) ball.style.background = 'yellow';
   if(positionY === Ymax-1) ball.style.background = 'purple';
