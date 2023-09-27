@@ -7,6 +7,8 @@ var positionX = 0;
 var time = 20;
 var isEdge = false;
 
+//move ball up a bit higher on the page
+ball.style.top = 50 + 'px';
 //write a function that can change the position of the html element "ball"
 function moveBall() {
   // two fixed x-axis coordinates (you will use these variable in step 3)
