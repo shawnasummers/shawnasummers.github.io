@@ -1,9 +1,9 @@
 //Set global variable that would contain the position, velocity and the html element "ball"
 let ball=document.getElementById('ball');
 var Xmin = 0;
-var Xmax = 250;
+var Xmax = 500;
 var Ymin = 0;
-var Ymax = 150;
+var Ymax = 300;
 var velocityX = 1;
 var velocityY = 1;
 var positionX = 0;
@@ -52,7 +52,7 @@ function moveBall() {
 }
 
 function changePlanets(){
-  if(positionX === Xmin+1)  ball.style.backgroundImage = 'url("earthflat.jpg")';
+  if(positionX === Xmin+1)  ball.style.backgroundImage = 'url("smallEarthSquare.jpg")';
   if(positionY === Ymin+1)  ball.style.backgroundImage = "url('jupiterflat.jpg')";
   if(positionX === Xmax-1) ball.style.background = "url('mercuryflat.jpg')";
   if(positionY === Ymax-1) ball.style.background = "url('marsflat.jpg')";

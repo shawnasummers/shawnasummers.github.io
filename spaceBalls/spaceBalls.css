@@ -1,6 +1,11 @@
+body{
+    margin 1px;
+}
 #space{
-    width: 290px;
-    height: 190px;
+    top: 0px;
+    left: 0px;
+    width: 575px;
+    height: 370px;
     background-image: url("stars.jpg");
 }
 
@@ -10,8 +15,8 @@ z-index: 5;
 position: absolute;
 left: 0px;
 top: 200px;
-width: 50px;
-height: 50px;
+width: 80px;
+height: 80px;
 border-radius: 50%;
-background-image: url("earthflat.jpg");
+//background-image: url("earthflat.jpg");
 }
