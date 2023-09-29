@@ -52,11 +52,29 @@ function moveBall() {
 }
 
 function changePlanets(){
-  if(positionX === Xmin+1)  ball.style.backgroundImage = 'url("smallEarthSquare.jpg")';
-  if(positionY === Ymin+1)  ball.style.backgroundImage = "url('jupiterflat.jpg')";
-  if(positionX === Xmax-1) ball.style.background = "url('mercuryflat.jpg')";
-  if(positionY === Ymax-1) ball.style.background = "url('marsflat.jpg')";
+  if(positionX === Xmin+1){
+     ball.style.backgroundImage = 'url("smallEarthSquare.jpg")';
+     ball.style.height = "80px";
+     ball.style.width = "80px";
+  }
+  if(positionY === Ymin+1){  
+    ball.style.backgroundImage = "url('jupiterflat.jpg')";
+    ball.style.height = "100px";
+    ball.style.width = "100px";
+  }
+  if(positionX === Xmax-1){ 
+    ball.style.background = "url('mercuryflat.jpg')";
+    ball.style.height = "40px";
+    ball.style.width = "40px";
+  }
+  if(positionY === Ymax-1){ 
+    ball.style.background = "url('marsflat.jpg')";
+    ball.style.height = "60px";
+    ball.style.width = "60px";
+  }
 }
+
+
 
 // This call the moveBall function every 100ms
 setInterval(moveBall, time);
