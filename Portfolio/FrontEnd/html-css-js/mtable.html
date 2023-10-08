@@ -2,7 +2,7 @@
     <img src="../../Media/mtable.png">
 </div>
 
-Multiplication Table
+<h1>Multiplication Table</h1>
 <br><br>
 
 This program runs on the console.  To find the console you have to go to 
@@ -19,7 +19,7 @@ Console to see the output.
     <script language="javascript">
         var realConsoleLog = console.log;
         console.log = function () {
-            var message = [].join.call(arguments, " ");
+            var message = [][].join.call(arguments, " ");
             $(".output").text(message);
             realConsoleLog.apply(console, arguments);
         };
