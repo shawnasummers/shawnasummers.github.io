@@ -9,6 +9,24 @@ This program runs on the console.  To find the console you have to go to
 the menu for the browser and look for the developers tools then choose 
 Console to see the output.
 
+
+<head>
+    <title>Console In Webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+    <div class="output"></div>
+    <script language="javascript">
+        var realConsoleLog = console.log;
+        console.log = function () {
+            var message = [].join.call(arguments, " ");
+            $(".output").text(message);
+            realConsoleLog.apply(console, arguments);
+        };
+        console.log("hello", "my", "name", "is", "shawna");
+    </script>
+
+
 <script>
 var multiplier = 1;
 
