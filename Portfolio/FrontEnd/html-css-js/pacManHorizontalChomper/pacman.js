@@ -55,8 +55,8 @@ module.exports = checkPageBounds;
 var pos = 0;
 let pageWidth = window.innerWidth;
 const pacArray = [
-  ["./images/PacMan1.png", "./images/PacMan2.png"],
-  ["./images/PacMan3.png", "./images/PacMan4.png"],
+  ["./images/MsPacMan1a.png", "./images/MsPacMan2a.png"],
+  ["./images/MsPacMan3a.png", "./images/MsPacMan4a.png"],
 ];
 var direction = 0;
 var focus = 0;
