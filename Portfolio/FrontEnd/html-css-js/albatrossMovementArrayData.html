@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Add a default marker</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+<style>
+  body { margin: 0; padding: 0; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  .map-overlay{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+
+  }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+<div class="map-overlay top">
+  <button style="font-size: 2em;" onclick="move()"> 
+    Show movement of Albatross
+  </button>
+</div>
+
+
+<script>
+mapboxgl.accessToken='pk.eyJ1Ijoic2hhd25hc3VtbWVycyIsImEiOiJjbHBpZjljdXgwZng4MmlxcWN5ZTgwcDc4In0.60FFj_jD4Pm6morCXhMZbw';
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-89.7400581, -1.372674],
+  zoom: 16
+});
+
+var marker = new mapboxgl.Marker()
+  .setLngLat([-89.7400581, -1.372674])
+  .addTo(map);
+
+  const birdLocations = [
+    [-89.7400582,-1.372675],
+    [-89.740053,-1.3726544],
+    [-89.7400575, -1.3726589],
+    [-89.7400497, -1.3726499],
+    [-89.7400693, -1.3726749],
+    [-89.7400323, -1.3726705], 
+    [-89.7400639, -1.3726679],
+    [-89.7400665, -1.3726753],
+    [-89.7400837, -1.3726593],
+    [-89.7401009, -1.3726716]
+  ];
+
+  var counter = 0;
+  function move(){
+    setTimeout(()=>{
+        if(counter >= birdLocations.length) return;
+        marker.setLngLat(birdLocations[counter])
+        counter++;
+        move();
+    }, 1000);
+  }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
