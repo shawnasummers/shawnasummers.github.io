@@ -1,5 +1,13 @@
+# Description
+The Eyes project allows the user on a desktop to move the mouse around on the screen and the eyes will follow the mouse.  On a mobile device the eyes will follow taps on the screen.
 
+# Installation
+To run this project download the files and open the index.html file via a browser or fork the Eyes directory into your own directory for your github pages. 
 
+# Roadmap
+I would like to create a monster around the eyes and change the color of the eyes.
+
+# License Information
 MIT License
 
 Copyright (c) 2023 AnneFein
