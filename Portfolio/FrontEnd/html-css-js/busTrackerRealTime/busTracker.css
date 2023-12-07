@@ -1,2 +1,27 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  #map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+  }
 
+  .map-overlay {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    top: 0px;
+    right: 0px;
+  }
+
+  #menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
 
