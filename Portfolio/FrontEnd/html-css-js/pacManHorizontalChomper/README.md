@@ -1,11 +1,11 @@
 # Description
-The Eyes project allows the user on a desktop to move the mouse around on the screen and the eyes will follow the mouse.  On a mobile device the eyes will follow taps on the screen.
+The pacManHorizontalChomper project has an updated Ms. Pac-Man instead of Pac-Man moving horizontally opening and closing her mouth in an eating motion from one side of the screen to the next side of the screen.  
 
 # Installation
-To run this project download the files and open the index.html file via a browser or fork the Eyes directory into your own directory for your github pages. 
+To run this project download the files and open the index.html file via a browser or fork the Eyes directory into your own directory for your github pages. If you change the size of the window/screen you are using you will need to refresh the page to get Ms. Pac-Man to change to the new screen size.
 
 # Roadmap
-I would like to create a monster around the eyes and change the color of the eyes.
+I would like to put dots infront of Ms. Pac-Man that disappear as see eats them and then a blue ghost that is running away from her in the same horizontal line.
 
 # License Information
 MIT License
