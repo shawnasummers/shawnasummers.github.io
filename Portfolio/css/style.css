@@ -11,6 +11,9 @@ div.col-sm{
 h1{
     color:blueviolet;
 }
+p{
+    color: lightgrey;
+}
 ul li{
     list-style-type: none;
     color: white;
